@@ -110,6 +110,7 @@ display:none;
   nav label{
     display:block;
     order:3;
+    cursor: pointer;
     }
   nav label i{
     color:#FF2020;
@@ -117,18 +118,17 @@ display:none;
   }
   nav .list{
     position: absolute;
-    background-color: grey;
+    background-color: #F0F0F2;
     top:75px;
-    left:19px;
-    width: 88%;
+    right:0px;
+    width: 30%;
     padding:20px;
     opacity: 0;
-    transition: 1s all;
+    transition: all .4s ease-in;
 
   }
   nav input:checked ~ .list{
     opacity: 1;
-    transition: 1s all;
   }
   nav .list .list-item{
     position: relative;
