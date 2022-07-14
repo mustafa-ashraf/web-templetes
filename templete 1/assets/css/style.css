@@ -1,0 +1,148 @@
+/*
+======================================
+        publics styles
+======================================
+*/
+* , *::after , *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  color:#141517;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: antiquewhite;
+}
+nav{
+  background-color: rgb(42, 165, 134);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px;
+  background-color: white;
+  padding: 26px 39px;
+  width: 100%;
+}
+nav .list {
+
+}
+nav .list .list-item{
+  display: inline-block;
+  position: relative;
+}
+nav .list .list-item a:hover{
+  color:#FF2020;
+}
+nav .list .list-item > a{
+    font-size: 19px;
+    text-decoration: none;
+    color: #141517;
+    margin-left: 21px;
+    text-transform: capitalize;
+}
+nav .list .list-item .drop-down{
+  position: absolute;
+  top: 38px;
+  left: 20px;
+  background-color: #fff;
+  list-style: none;
+  width: 200px;
+  padding: 17px 0;
+  border-top: #FF2020 3px solid;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  opacity: 0;
+  transition: 1s all;
+}
+nav .list .list-item:hover >.drop-down{
+  display: block;
+  opacity: 1;
+}
+nav .list .list-item .drop-down::before{
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top:-22px;
+  left:15px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid #FF2020;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+nav .list .list-item:nth-child(4)::after{
+  content: "HOT";
+  position: absolute;
+  background-color: #FF2020;
+  color: #fff;
+  top: -23px;
+  left: 69px;
+  font-size: 10px;
+  padding: 5px 7px;
+  border-radius: 7px;
+  text-transform: uppercase;
+  box-shadow: 0px 2px 6px 1px grey;
+}
+nav .list .list-item .drop-down .drop-down-item{
+  margin:11px 18px;
+  font-size: 20px;
+  
+}
+nav .list .list-item .drop-down .drop-down-item a{
+  text-decoration: none;
+  margin: 2px;
+  color: #141517;
+
+}
+
+nav .nav-icon a{
+  color:#141517;
+  padding-left: 25px;
+}
+nav input , nav label{
+display:none;
+}
+
+@media(max-width:991px){
+  nav{
+    padding: 26px 14px;
+  }
+  nav label{
+    display:block;
+    order:3;
+    }
+  nav label i{
+    color:#FF2020;
+    font-size: 25px;
+  }
+  nav .list{
+    position: absolute;
+    background-color: grey;
+    top:75px;
+    left:19px;
+    width: 88%;
+    padding:20px;
+    opacity: 0;
+    transition: 1s all;
+
+  }
+  nav input:checked ~ .list{
+    opacity: 1;
+    transition: 1s all;
+  }
+  nav .list .list-item{
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+
+  }
+  nav .nav-icon a{
+    margin-left: 10px;
+  }
+  nav .list .list-item:nth-child(4)::after{
+  display: none;
+  }
+
+
+}
+
