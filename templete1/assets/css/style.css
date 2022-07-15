@@ -11,11 +11,13 @@
 body{
   color:#141517;
   font-family: 'Josefin Sans', sans-serif;
-  background-color: #eee;
+  /* background-color: rgb(141, 80, 80); */
+  height: 2000px;
 }
 .container{
-  width: 85%;
+  /* width: 85%; */
   margin: auto;
+  overflow: hidden;
 }
 .row{
   display: flex;
@@ -239,6 +241,7 @@ display:none;
         end nav media
 ======================================
 */
+
 /*
 ======================================
         start header section style
@@ -246,7 +249,13 @@ display:none;
 */
 .container .row
 {
+  justify-content: space-around;
   align-items: center;
+  
+}
+.shop-now .row {
+  background-color: #F0F0F2;
+  width:100%;
 }
 
 
@@ -258,7 +267,7 @@ padding-top: 200px;
   padding-top: 50px;
   padding-bottom: 100px;
 }
-.container .row img {
+.container .row .header-content ~ .watch {
     animation-name: zoom-in-zoom-out;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -286,7 +295,15 @@ padding-top: 200px;
 ======================================
 */
 @media(max-width:991px){
-  .container .row img {display:none;}
+.container .row .watch {display:none;}
+.container .row .header-content{
+  padding:0 150px 150px 150px;
+}
+.container .row .header-content .btn{
+  padding:40px 100px;
+  font-size: 35px;
+  border-radius: 10px;
+}
 
 .container .row .header-content h1{
   font-size:86px ;
@@ -301,6 +318,114 @@ padding-top: 200px;
 ======================================
         end header section media
 ======================================
+*/
+
+/* 
+=========================================
+        start arrivals section style 
+=========================================
+*/
+
+.arrivals{
+  /* background-color: rgb(242, 242, 0); */
+  padding: 100px 0 70px;
+  justify-content:center;
+}
+.arrivals .container .row{
+  justify-content: center;
+}
+.arrivals .item{
+  text-align: center;
+  margin-bottom: 23px;
+  margin-left: 25px;
+
+
+  
+}
+.arrivals h2{
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+    padding:0 0 50px 200px;
+    line-height: 1;
+}
+.arrivals .item .img-item{
+  margin-bottom: 23px;
+  overflow: hidden;
+}
+.arrivals .item .img-item img{
+  transition: 0.5s all;
+
+}
+.arrivals .item:hover img{
+  transform: scale(1.1);
+}
+.arrivals .item a{
+  color: #444;
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: none;
+}
+.arrivals .item p{
+  margin-top: 18px;
+  color:#FF2027;
+  font-weight: 600;
+}
+
+/* 
+=========================================
+        end arrivals section style 
+=========================================
+*/
+
+
+/* 
+=========================================
+        start arrivals section media 
+=========================================
+*/
+@media(max-width:991px){
+
+  .arrivals .row{
+    display: block;
+    padding:100px 0 100px 0;
+  }
+  
+  .arrivals h2{
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: left;
+    margin-bottom: 50px;
+  
+  }
+  .arrivals img {
+    width:80%;
+    height: 20%;
+  }
+  .arrivals .item{
+    margin-bottom: 75px;
+    overflow: hidden;
+  }
+  .arrivals .item a{
+    color: #444;
+    font-weight: 700;
+    font-size: 34px;
+    text-decoration: none;
+  }
+  .arrivals .item p{
+    font-size: 24px;
+    margin-top: 18px;
+    color:#FF2027;
+    font-weight: 600;
+  }
+}
+
+/* 
+=========================================
+        end arrivals section media 
+=========================================
 */
 
 
