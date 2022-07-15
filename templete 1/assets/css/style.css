@@ -219,6 +219,8 @@ padding-top: 200px;
 }
 .shop-now .left a button{
   position: relative;
+  color:white;
+  z-index: 50000000;
 }
 .shop-now .left a button::after{
   content: "";
@@ -227,7 +229,7 @@ padding-top: 200px;
   height: 100%;
   top:0;
   left:0;
-  background: #ff003b;
+  background: red;
   transition: all .35s;
 }
 .shop-now .left a button{
@@ -235,18 +237,16 @@ padding-top: 200px;
   background-color: #4a4a4b;
   border:none;
   outline: none;
-  color:white;
   font-size: 20px;
   font-weight: bolder;
+  z-index: 5;
   
 }
 
-.shop-now .left a button:hover{
-  color:white;
 
-}
 .shop-now .left a button:hover:after{
   width: 100%;
+  z-index: -2;
 }
 .shop-now .right img {
     width:100%;
@@ -267,7 +267,33 @@ padding-top: 200px;
     }
     }
     
-    
+/*
+======================================
+        end shop-now section style
+======================================
+*/
+/*
+======================================
+        start shop-now section media
+======================================
+*/
+@media(max-width:991px){
+  .shop-now .right{display:none;}
+}
+.shop-now .left h1{
+  font-size:86px ;
+  line-height: 1.6;
+}
+.shop-now .left p{
+  font-size:17px ;
+  line-height: 1.6;
+}
+/*
+======================================
+        end shop-now section media
+======================================
+*/
+
 
 
 
