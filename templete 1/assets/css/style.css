@@ -30,6 +30,9 @@ nav{
   padding: 40px 39px;
   width: 100%;
   /* box-shadow: 0px 2px 6px 1px grey; */
+  position: fixed;
+  top:0;
+  z-index: 8888;
 }
 
 
@@ -60,6 +63,7 @@ nav .list .list-item .drop-down{
   border-top-right-radius: 15px;
   opacity: 0;
   transition: 1s all;
+  z-index: 50;
 }
 nav .list .list-item:hover >.drop-down{
   display: block;
@@ -112,11 +116,18 @@ nav .nav-icon a:hover{
 nav input , nav label{
 display:none;
 }
+/*
+======================================
+        end nav styles
+======================================
+*/
 
+/*
+======================================
+        start nav media
+======================================
+*/
 @media(max-width:991px){
-  nav{
-    padding: 26px 14px;
-  }
   nav label{
     display:block;
     order:3;
@@ -129,12 +140,11 @@ display:none;
   nav .list{
     position: absolute;
     background-color: #F0F0F2;
-    top:75px;
+    top:100px;
     right:0px;
-    width: 30%;
-    padding:20px;
     opacity: 0;
     transition: all .4s ease-in;
+    width:100%;
 
   }
   nav input:checked ~ .list{
@@ -144,6 +154,10 @@ display:none;
     position: relative;
     display: block;
     margin-bottom: 20px;
+    margin-left: 30px;
+    font-size: 50px;
+    font-weight: bolder;
+   
 
   }
   nav .list .list-item .drop-down::before{
@@ -151,23 +165,24 @@ display:none;
       width: 0px;
       height: 0px;
       position: absolute;
-      top:-22px;
-      left:15px;
       border-top: 10px solid transparent;
       border-bottom: 10px solid transparent;
-      border-left: 10px solid #FF2020;
-      border-right: 10px solid transparent;
+      border-left: 10px solid transparent;
+      border-right: 10px solid #FF2020;
       top:5px;
-      left:198px;
+      left:-18px;
   }
   nav .list .list-item .drop-down{
-      top: -5px;
-      left: -191px;
+      top: 16px;
+      left: 120px;
+      z-index: 1;
+      width:30%;
+  }
+  nav .list .list-item .drop-down .drop-down-item{
+    padding:4px 10px;
   }
 
-  nav .nav-icon a{
-    margin-left: 10px;
-  }
+  
   nav .list .list-item:nth-child(4)::after{
   display: none;
   }
@@ -177,7 +192,63 @@ display:none;
 
 /*
 ======================================
-        end nav styles
+        end nav media
 ======================================
 */
+/*
+======================================
+        start shop-now section style
+======================================
+*/
+.shop-now{
+  display: flex;
+  justify-content: space-around;
+  /* align-items:initial; */
+  padding:0 100px 0 200px;
+}
+.shop-now .left {
+  padding-top: 100px;
+}
+.shop-now .left h1{
+font-size:96px ;
+padding-top: 200px;
+}
+.shop-now .left p{
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.shop-now .left a button{
+  position: relative;
+}
+.shop-now .left a button::after{
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 100%;
+  top:0;
+  left:0;
+  background: #ff003b;
+  transition: all .35s;
+}
+.shop-now .left a button{
+  padding: 20px 40px;
+  background-color: #4a4a4b;
+  border:none;
+  outline: none;
+  color:white;
+  font-size: 20px;
+  font-weight: bolder;
+  
+}
+
+.shop-now .left a button:hover{
+  color:white;
+
+}
+.shop-now .left a button:hover:after{
+  width: 100%;
+}
+
+
+
 
