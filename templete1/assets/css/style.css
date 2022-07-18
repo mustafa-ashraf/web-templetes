@@ -15,7 +15,7 @@ body{
   height: 2000px;
 }
 .container{
-  /* width: 85%; */
+  width: 85%;
   margin: auto;
   overflow: hidden;
 }
@@ -162,6 +162,9 @@ nav .nav-icon a:hover{
 nav input , nav label{
 display:none;
 }
+.nav-bar{
+  box-shadow: 0 3px 3px -2px rgba(0,0,0,.2);
+}
 /*
 ======================================
         end nav styles
@@ -224,6 +227,7 @@ display:none;
       z-index: 1;
       width:30%;
   }
+
   nav .list .list-item .drop-down .drop-down-item{
     padding:4px 10px;
   }
@@ -247,6 +251,9 @@ display:none;
         start header section style
 ======================================
 */
+.shop-now{
+  width:100%
+}
 .container .row
 {
   justify-content: space-around;
@@ -480,14 +487,170 @@ padding-top: 200px;
   
   .section-images {
     display: block;
-  } 
-
+  }
 }
   /* 
 ======================================
         end images section media
 ====================================== 
  */
+
+ /* 
+ ======================================
+ start of popular items section
+ ======================================  
+*/
+.popular {
+  text-align: center;
+}
+.popular h2{
+  color:#141517;
+  padding:20px;
+  font-size: 48px;
+  font-weight: 700;
+}
+.popular > p{
+  font-family: "Roboto",sans-serif;
+  color: #777;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 70px;
+  font-weight: normal;
+
+}
+.popular .container .row{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.popular .container .row .item{
+ 
+  margin-bottom: 30px;
+  overflow: hidden;
+
+  
+}
+.popular .img-item{
+  position: relative;
+  border-bottom: 5px solid #f81f1f;
+  margin-bottom: 20px;
+  overflow: hidden;
+
+}
+.popular .item  button{
+  position: absolute;
+  bottom: -75px;
+  left:0;
+  width: 100%;
+  padding:20px 0;
+  text-align: center;
+  background-color: #f81f1f;
+  outline: none;
+  border: none;
+  color:white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.popular .item:hover button {
+  transform: translate(0,-75px);
+
+}
+
+.popular .item a{
+  color: #444;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+.popular .item p{
+padding:10px 0 10px 0;
+}
+.popular .btn{
+  margin: 100px 0;
+  background-color:#f81f1f;
+  font-family: "Josefin Sans",sans-serif;
+  font-size: 16px;
+
+}
+.popular .btn::after{
+  background-color: #4a4a4b;
+}
+
+  /* 
+======================================
+        start next-video section style
+====================================== 
+ */
+  .next-video .container{
+      width:100%;
+      position: relative;
+      transition: 1s all;
+  }
+  .next-video .next{
+    position: absolute;
+    left:0;
+    bottom:5px;
+    background-image: url("/assets/img/xvidoe_more.png.pagespeed.ic.qi7r8yaMbc.png");
+    background-size: cover;
+    padding:70px 80px 70px 80px;
+    z-index: 8;
+  }
+  .next-video .overlay{
+    background-color:transparent;
+    position: absolute;
+    top:0;
+    left: 0;
+    padding:100%;
+    transition: 1s all;
+  }
+  .next-video .container:hover .overlay{
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+  .next-video .next span{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #fff;
+  }
+  .next-video .next i{
+    font-size: 30px;
+    margin-left: 250px;
+    color:white;
+    text-align: center;
+  }
+  .next-video .play a i{
+    position: absolute;
+    top:50%;
+    left:50%;
+    font-size: 40px;
+    color:white;
+    border:1px solid white;
+    padding:25px;
+    padding-left:30px;
+    border-radius: 50%;
+    transition: 1s all;
+    text-rendering: auto;
+    font-style: normal;
+    font-variant: normal;
+    z-index: 7;
+  }
+.next-video .container:hover .play a i{
+  padding:30px 30px 30px 35px;
+}
+.next-video .play:hover i{
+      background-color: white;
+      color:red;
+}
+ /* 
+ ======================================
+        end next-video section style
+ ======================================  
+*/
+
+
 
 
 
