@@ -713,6 +713,44 @@ padding:10px 0 10px 0;
         end next-video section style
  ======================================  
 */
+/*
+========================================
+      start next video section media 
+========================================
+*/
+@media(max-width:991px){
+    .next-video .next span{
+      font-size: 40px;
+    }
+    .next-video .next i{
+      font-size: 50px;
+      margin-left: 175px;
+      
+    }
+    .next-video .play a i{
+      top:30%;
+      left:45%;
+      font-size: 90px;
+      padding:25px;
+      padding-left: 35px;
+      border: 5px solid white;
+    }
+    .next-video .container:hover .play a i{
+    padding:40px 40px 40px 50px;
+    }
+    .next-video .play:hover i{
+        background-color: white;
+        color:red;
+    }
+    .next-video .container{
+      width: 100%;
+      height: 600px;
+    }
+    .next-video .container img{
+      width: 100%;
+      height: 100%;
+    }
+}
 
 
 
