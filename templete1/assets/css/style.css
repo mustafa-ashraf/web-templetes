@@ -184,59 +184,66 @@ display:none;
     }
   nav label i{
     color:#FF2020;
-    font-size: 80px;
+    font-size: 60px;
   }
   nav .list{
     position: absolute;
     background-color: #F0F0F2;
-    top:100px;
-    right:0px;
+    top:140px;
+    right:10%;
     display: none;
-    width:100%;
-
+    width:80%;
   }
   nav input:checked ~ .list{
-    display: block;  }
+    display: block;
+    background-color:rgb(255, 255, 255);
+  }
   nav .list .list-item{
     position: relative;
     display: block;
-    margin-bottom: 20px;
-    margin-left: 30px;
-    font-size: 50px;
-    font-weight: bolder;
-   
-
+    padding:20px 0 20px 40px;
+  }
+  nav .list .list-item:hover{
+    cursor: pointer;
+  }
+  nav .list .list-item > a{
+    font-size:50px ;
   }
   nav .list .list-item .drop-down::before{
       content: "";
       width: 0px;
       height: 0px;
       position: absolute;
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      border-left: 10px solid transparent;
-      border-right: 10px solid #FF2020;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      border-left: 20px solid transparent;
+      border-right: 20px solid #FF2020;
       top:5px;
-      left:-18px;
+      left:-38px;
   }
   nav .list .list-item .drop-down{
-      top: 16px;
-      left: 120px;
+      top: 20px;
+      left: 250px;
       z-index: 1;
-      width:30%;
+      width:60%;
+      background-color:#eee;
   }
 
   nav .list .list-item .drop-down .drop-down-item{
     padding:4px 10px;
-  }
+    font-size: 40px;
+    }
 
   
   nav .list .list-item:nth-child(4)::after{
   display: none;
   }
   nav .nav-icon{
-    font-size: 60px;
-    padding:15px;
+    font-size: 40px;
+    padding-right:45px;
+  }
+  nav .nav-icon i{
+    padding:0 20px;
   }
   nav > a{
     width:30%;
