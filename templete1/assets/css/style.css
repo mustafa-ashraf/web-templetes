@@ -559,7 +559,7 @@ padding-top: 200px;
 }
 .popular .item  button{
   position: absolute;
-  bottom: -75px;
+  bottom: -100px;
   left:0;
   width: 100%;
   padding:20px 0;
@@ -573,7 +573,7 @@ padding-top: 200px;
   transition: 0.75s all;
 }
 .popular .item:hover button {
-  transform: translate(0,-75px);
+  transform: translate(0,-105px);
 
 }
 .popular .item:hover i{
@@ -759,6 +759,11 @@ padding:10px 0 10px 0;
       height: 100%;
     }
 }
+/*
+========================================
+      end next video section media 
+========================================
+*/
 
 /* 
  ======================================
