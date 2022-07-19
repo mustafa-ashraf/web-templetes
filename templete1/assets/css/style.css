@@ -107,13 +107,13 @@ nav .list .list-item .drop-down{
   border-top: #FF2020 3px solid;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  opacity: 0;
+  display: none;
   transition: 1s all;
   z-index: 50;
 }
 nav .list .list-item:hover >.drop-down{
   display: block;
-  opacity: 1;
+  display: block;
 }
 nav .list .list-item .drop-down::before{
   content: "";
@@ -191,14 +191,12 @@ display:none;
     background-color: #F0F0F2;
     top:100px;
     right:0px;
-    opacity: 0;
-    transition: all .4s ease-in;
+    display: none;
     width:100%;
 
   }
   nav input:checked ~ .list{
-    opacity: 1;
-  }
+    display: block;  }
   nav .list .list-item{
     position: relative;
     display: block;
@@ -664,6 +662,9 @@ padding:10px 0 10px 0;
       position: relative;
       transition: 1s all;
   }
+  .next-video{
+    margin-bottom: 200px;
+  }
   .next-video .next{
     position: absolute;
     left:0;
@@ -700,20 +701,17 @@ padding:10px 0 10px 0;
     top:50%;
     left:50%;
     font-size: 40px;
+    display: inline-block;
     color:white;
-    border:3px solid white;
-    padding:25px;
-    padding-left:30px;
+    border:2px solid white;
+    padding:30px;
     border-radius: 50%;
-    transition: 1s all;
-    text-rendering: auto;
-    font-style: normal;
-    font-variant: normal;
+    transition: 0.5s all;
     z-index: 7;
   }
-.next-video .container:hover .play a i{
+/* .next-video .container:hover .play a i{
   padding:30px 30px 30px 35px;
-}
+} */
 .next-video .play:hover i{
       background-color: white;
       color:red;
@@ -762,7 +760,107 @@ padding:10px 0 10px 0;
     }
 }
 
+/* 
+ ======================================
+        start watch info section style
+ ======================================  
+*/
+.watch .container{
+  width: 80%;
+  padding:60px 0;
+}
+.watch .container .row{
+  justify-content: space-around;
+  align-items: center;
+}
+.watch .col{
+  display: flex;
+  flex-wrap: wrap;
+}
+.watch .row:nth-child(1) img{
+  margin-left:100px;
+}
+.watch .row:nth-child(1){
+  margin-bottom: 250px;
+}
+.watch .row:nth-child(2) img{
+  margin-right:150px;
+}
 
+.watch .watch-info h2{
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.watch .watch-info p{
+  font-family: "Roboto",sans-serif;
+  color: #777;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+.watch .watch-info .btn{
+  background-color: #f81f1f;
+  margin-top: 50px;
+  font-size: 16px;
+}
+.watch .watch-info .btn::after{
+  background-color: #4a4a4b;
+}
+/*
+========================================
+     end watch info section style
+========================================
+*/
+
+/* 
+ ======================================
+        start watch info section media
+ ======================================  
+*/
+@media(max-width:991px){
+  .watch .container{
+    width: 80%;
+  }
+  .watch .container .row{
+    display: block;
+  }
+  .watch .watch-info{
+    text-align: center;
+  }
+  
+
+  .watch .row:nth-child(1) img {
+    margin-left: 9px;
+    margin-top: 83px;
+    width: 100%;
+  }
+  .watch .watch-info h2 {
+    font-size: 94px;
+    font-weight: 700;
+    margin-bottom: 68px;
+  }
+
+
+    .watch .watch-info .btn {
+        background-color: #f81f1f;
+        margin-top: 50px;
+        font-size: 42px;
+        font-weight: 100;
+        padding: 30px 65px;
+    }
+    .watch .row:nth-child(2) img {
+      width: 100%;
+    }
+
+
+}
+/*
+========================================
+     end watch info section media
+========================================
+*/
 
 
 
