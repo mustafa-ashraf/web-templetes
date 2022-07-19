@@ -552,6 +552,13 @@ padding-top: 200px;
   overflow: hidden;
 
 }
+.popular .img-item a i {
+  position: absolute;
+  top:10px;
+  right: 20px;
+  font-size: 40px;
+  opacity: 0;
+}
 .popular .item  button{
   position: absolute;
   bottom: -75px;
@@ -565,11 +572,14 @@ padding-top: 200px;
   color:white;
   font-size: 20px;
   cursor: pointer;
-  transition: 0.5s all;
+  transition: 0.75s all;
 }
 .popular .item:hover button {
   transform: translate(0,-75px);
 
+}
+.popular .item:hover i{
+  opacity: 1;
 }
 
 .popular .item a{
