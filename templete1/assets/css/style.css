@@ -12,7 +12,6 @@ body{
   color:#141517;
   font-family: 'Josefin Sans', sans-serif;
   /* background-color: rgb(141, 80, 80); */
-  height: 2000px;
 }
 .container{
   width: 85%;
@@ -24,6 +23,13 @@ body{
   /* justify-content: space-between; */
   align-items: flex-start;
 }
+
+@media(max-width:991px){
+  .row{
+  flex-flow: column wrap;
+}
+}
+
 /*
 ======================================
         btn style
@@ -793,7 +799,7 @@ padding:10px 0 10px 0;
   margin-left:100px;
 }
 .watch .row:nth-child(1){
-  margin-bottom: 250px;
+  margin-bottom: 150px;
 }
 .watch .row:nth-child(2) img{
   margin-right:150px;
@@ -874,8 +880,207 @@ padding:10px 0 10px 0;
 ========================================
 */
 
+/*
+========================================
+     start shop info section style
+========================================
+*/
+.shop-info{
+      margin-top: 100px;
+      margin-bottom: 50px;
+
+}
+.shop-info .container{
+  background-color: #f81f1f;
+  padding: 0px 20px ;
+  width: 80%;
+
+}
+.shop-info .container .row{
+  padding:50px 35px 50px 35px;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.shop-info .item{
+  width: 24%;
+  color:white
+}
+.shop-info h2{
+ font-weight: 700;
+ font-size: 20px;
+ padding-bottom: 30px;
+}
+.shop-info .icon{
+  margin-bottom: 50px;
+}
+.shop-info .icon i{
+  font-size: 30px;
+}
+.shop-info p{
+  font-family: "Roboto",sans-serif;
+  color: #d3d1d1;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+/*
+========================================
+     end shop info section style
+========================================
+*/
 
 
 
+/*
+========================================
+     start shop info section media
+========================================
+*/
+@media(max-width:991px){  
+  .shop-info .item{
+    width: 100%; 
+    padding-bottom: 23px;
+   } 
+  
+}
+/*
+========================================
+     end shop info section media
+========================================
+*/
 
 
+/*
+========================================
+     start footer section style
+========================================
+*/
+footer .content-footer{
+  width:25%;
+  padding: 55px 25px;
+}
+
+footer .content-footer img{
+  width: 50%;
+  margin-bottom: 70px;
+}
+footer .content-footer p{
+  color: #868c98;
+  line-height: 1.4;
+  margin-bottom: 70px;
+}
+footer .list-footer {
+  padding: 84px 65px;
+}
+
+footer .list-footer h2 {
+  font-size: 21px;
+  margin-bottom: 40px;
+}
+footer .list-footer .list-item {
+  list-style: none;
+  padding-bottom: 25px;
+}
+footer .list-footer .list-item a {
+  text-decoration: none;
+  color:#868c98;
+  font-weight: 500;
+}
+footer .list-footer .list-item a:hover{
+  color:#f81f1f;
+}
+footer .list-footer li{
+  transition: 0.5s all;
+}
+footer .list-footer li:hover {
+transform: translateX(5px);
+}
+footer .buttom-footer{
+  padding:50px 50px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .buttom-footer .copy-right{
+    width:50%;
+}
+footer .buttom-footer .copy-right p{
+  color:#868c98;
+
+}
+footer .buttom-footer .copy-right i{
+  color:#f81f1f
+}
+footer .buttom-footer .copy-right span{
+  color:#f81f1f;
+}
+footer .social a i {
+  color: black;
+  margin-left: 20px;
+  font-size: 20px;
+}
+footer .social a i:hover{
+  cursor: pointer;
+  transform:rotateY(180deg);
+  color:#f81f1f;
+}
+
+/*
+========================================
+     start footer section style
+========================================
+*/
+
+/*
+========================================
+     start footer section media
+========================================
+*/
+@media(max-width:991px){  
+  footer .list-footer {
+    padding: 47px 0px;
+    width: 100%;
+    margin-bottom: 35px;
+    }
+  footer .content-footer {
+    width: 100%;  
+    padding: 47px 0px;
+    margin-top: 100px;
+  }
+  footer .buttom-footer p{
+    font-size: 38px;
+  }
+
+  footer .buttom-footer .copy-right{
+    width:100%;
+}
+footer .buttom-footer .social {
+  width:80%;
+  text-align: center;
+  margin: auto;
+  padding: 70px 0;
+}
+footer .buttom-footer .social i {
+  font-size: 50px;
+
+}
+  footer .buttom-footer{
+    display:block;
+  }
+  
+}
+
+/*
+========================================
+     end footer section media
+========================================
+*/
+
+
+
+                      /*=========================================*/
+                      /*===============The=end===================*/
+                      /*=========================================*/
