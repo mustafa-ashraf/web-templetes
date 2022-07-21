@@ -639,7 +639,11 @@ padding:10px 0 10px 0;
     width: 100%;
     height: 100%;
   }
-
+  .popular .img-item a i {
+    top:30px;
+    right: 50px;
+    font-size: 80px;
+  }
   .popular .item  button{
     width: 100%;
     font-size: 60px;
